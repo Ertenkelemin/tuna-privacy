@@ -2,44 +2,326 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>TUNA — Privacy Policy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TUNA — Privacy Policy & Terms</title>
 <style>
+  :root {
+    --bg: #0B1220;
+    --surface: #111A2E;
+    --border: #1E2A45;
+    --text: #EDEEF2;
+    --muted: #A2A9B8;
+    --accent: #4FD3D7;
+    --amber: #FFC857;
+  }
+  * { box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    max-width: 720px;
-    margin: 40px auto;
-    padding: 0 20px;
+    background: var(--bg);
+    color: var(--text);
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
     line-height: 1.6;
+    font-size: 16px;
   }
-  h1 { border-bottom: 2px solid #ddd; padding-bottom: 8px; }
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+  header .logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+  }
+  header h1 {
+    margin: 0;
+    color: var(--accent);
+    font-size: 28px;
+    letter-spacing: 4px;
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0 0 32px;
+  }
+  nav {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
+  }
+  nav a {
+    padding: 8px 14px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+  }
+  nav a:hover { border-color: var(--accent); color: var(--accent); }
+  section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+  h2 {
+    margin: 0 0 8px;
+    color: var(--amber);
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+  h3 {
+    margin: 24px 0 8px;
+    color: var(--accent);
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  p { margin: 8px 0; color: var(--text); }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  .lang-divider {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 48px 0 16px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 40px;
+  }
 </style>
 </head>
 <body>
 
-<h1>Privacy Policy — TUNA</h1>
-<p><em>Last updated: 2026-04-27</em></p>
+<header>
+  <div class="logo">🐟</div>
+  <h1>TUNA</h1>
+</header>
+<p class="meta">Last updated: 2026-05-21</p>
 
-<p>
-  TUNA is a single-player arcade game. We do not collect, transmit, or
-  share any personal data.
-</p>
+<nav>
+  <a href="#privacy">Privacy Policy</a>
+  <a href="#terms">Terms of Use</a>
+  <a href="#ru">RU</a>
+</nav>
 
-<p>
-  The game stores your best height, sound preference, and unlocked
-  achievements locally on your device using the operating system's
-  standard local storage. This data never leaves your device and is
-  removed when you uninstall the app.
-</p>
+<!-- ========== EN ========== -->
 
-<p>
-  TUNA does not use accounts, advertising, analytics, or any third-party
-  services. It does not request microphone, camera, contacts, location,
-  or photo library access.
-</p>
+<section id="privacy">
+  <h2>Privacy Policy</h2>
+  <p>
+    TUNA is a single-player arcade game developed as an indie project.
+    We do not collect, transmit, sell, or share any personal data.
+  </p>
 
-<p>
-  Contact: <a href="mailto:zhakanbaev.bakhtiyar@gmail.com">zhakanbaev.bakhtiyar@gmail.com</a>
-</p>
+  <h3>Data stored on your device</h3>
+  <p>
+    The game stores the following locally on your device using the
+    operating system's standard local storage (e.g. iOS UserDefaults):
+  </p>
+  <ul>
+    <li>your best height (record);</li>
+    <li>highest milestone reached;</li>
+    <li>unlocked achievements;</li>
+    <li>audio / vibration / language preferences;</li>
+    <li>a flag indicating that the tutorial has been completed.</li>
+  </ul>
+  <p>
+    This data never leaves your device and is removed when you uninstall
+    the app.
+  </p>
+
+  <h3>What we don't do</h3>
+  <ul>
+    <li>No accounts, sign-up, or login.</li>
+    <li>No advertising or third-party SDKs (no AdMob, Facebook, etc.).</li>
+    <li>No analytics, crash reporting, or telemetry.</li>
+    <li>No microphone, camera, contacts, location, or photo library
+        access.</li>
+    <li>No use of the Advertising Identifier (IDFA) and no App Tracking
+        Transparency prompt.</li>
+  </ul>
+
+  <h3>Children's privacy</h3>
+  <p>
+    TUNA is suitable for all ages and does not knowingly collect data
+    from anyone, including children under 13.
+  </p>
+
+  <h3>Changes to this policy</h3>
+  <p>
+    If this policy changes, the updated version will be published at this
+    same URL with a new "Last updated" date.
+  </p>
+
+  <h3>Contact</h3>
+  <p>
+    Questions:
+    <a href="mailto:zhakanbaev.bakhtiyar@gmail.com">zhakanbaev.bakhtiyar@gmail.com</a>
+  </p>
+</section>
+
+<section id="terms">
+  <h2>Terms of Use</h2>
+  <p>
+    By downloading or using TUNA, you agree to the following terms.
+  </p>
+
+  <h3>Licence</h3>
+  <p>
+    TUNA is licensed, not sold. You receive a personal, non-transferable
+    licence to use the app on devices you own or control, for personal,
+    non-commercial entertainment purposes.
+  </p>
+
+  <h3>Acceptable use</h3>
+  <ul>
+    <li>Don't decompile, reverse-engineer, or modify the app beyond what
+        applicable law allows.</li>
+    <li>Don't redistribute the app, its assets, or its sounds.</li>
+    <li>Don't use the app for any unlawful purpose.</li>
+  </ul>
+
+  <h3>No warranty</h3>
+  <p>
+    TUNA is provided "as is", without warranty of any kind. We don't
+    guarantee uninterrupted availability or that it will be free of bugs.
+    To the maximum extent permitted by law, we disclaim all implied
+    warranties.
+  </p>
+
+  <h3>Liability</h3>
+  <p>
+    To the extent permitted by law, we are not liable for indirect or
+    consequential damages arising from your use of the app.
+  </p>
+
+  <h3>Termination</h3>
+  <p>
+    You can stop using TUNA at any time by uninstalling it. We may
+    discontinue the app or its features without notice.
+  </p>
+
+  <h3>Governing law</h3>
+  <p>
+    These terms are governed by the laws of the developer's country of
+    residence, without regard to conflict-of-laws provisions.
+  </p>
+</section>
+
+<!-- ========== RU ========== -->
+
+<div class="lang-divider">— RU —</div>
+
+<section id="ru">
+  <h2>Политика конфиденциальности</h2>
+  <p>
+    TUNA — однопользовательская аркадная игра, разработанная как
+    независимый инди-проект. Мы не собираем, не передаём, не продаём
+    и не передаём третьим лицам никакие персональные данные.
+  </p>
+
+  <h3>Что хранится на вашем устройстве</h3>
+  <p>
+    Игра локально хранит на вашем устройстве (через стандартное локальное
+    хранилище ОС, например iOS UserDefaults):
+  </p>
+  <ul>
+    <li>ваш рекорд высоты;</li>
+    <li>максимальный достигнутый рубеж;</li>
+    <li>разблокированные достижения;</li>
+    <li>настройки звука, вибрации и языка;</li>
+    <li>флаг прохождения туториала.</li>
+  </ul>
+  <p>
+    Эти данные не покидают ваше устройство и удаляются при удалении
+    приложения.
+  </p>
+
+  <h3>Что мы НЕ делаем</h3>
+  <ul>
+    <li>Нет аккаунтов и регистрации.</li>
+    <li>Нет рекламы и сторонних SDK.</li>
+    <li>Нет аналитики и сбора телеметрии.</li>
+    <li>Не запрашиваем микрофон, камеру, контакты, геолокацию или
+        фото.</li>
+    <li>Не используем IDFA, не показываем ATT-промпт.</li>
+  </ul>
+
+  <h3>Конфиденциальность детей</h3>
+  <p>
+    Игра подходит для всех возрастов и не собирает данные ни от кого,
+    включая детей младше 13 лет.
+  </p>
+
+  <h3>Контакты</h3>
+  <p>
+    Вопросы:
+    <a href="mailto:zhakanbaev.bakhtiyar@gmail.com">zhakanbaev.bakhtiyar@gmail.com</a>
+  </p>
+</section>
+
+<section>
+  <h2>Условия использования</h2>
+  <p>
+    Скачивая или используя TUNA, вы соглашаетесь со следующими
+    условиями.
+  </p>
+
+  <h3>Лицензия</h3>
+  <p>
+    Приложение лицензируется, а не продаётся. Вы получаете личную,
+    непередаваемую лицензию на использование приложения на устройствах,
+    которыми владеете или управляете, в личных некоммерческих целях.
+  </p>
+
+  <h3>Допустимое использование</h3>
+  <ul>
+    <li>Не декомпилируйте, не реверс-инжинирьте и не модифицируйте
+        приложение сверх того, что разрешено законом.</li>
+    <li>Не распространяйте приложение, его ассеты или звуки.</li>
+    <li>Не используйте приложение в незаконных целях.</li>
+  </ul>
+
+  <h3>Без гарантий</h3>
+  <p>
+    TUNA предоставляется «как есть», без каких-либо гарантий. Мы не
+    гарантируем непрерывную доступность или отсутствие багов.
+  </p>
+
+  <h3>Ответственность</h3>
+  <p>
+    В пределах, разрешённых законом, мы не несём ответственности за
+    косвенные или последующие убытки, связанные с использованием
+    приложения.
+  </p>
+
+  <h3>Прекращение</h3>
+  <p>
+    Вы можете прекратить использование в любой момент, удалив
+    приложение. Мы вправе приостановить разработку или отдельные функции
+    без предварительного уведомления.
+  </p>
+</section>
+
+<footer>
+  © 2026 TUNA. Made with care.
+</footer>
 
 </body>
 </html>
